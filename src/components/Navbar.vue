@@ -15,8 +15,8 @@
             width: 90%;
         }
         @media (max-width: 768px) {
-            height: unset;
             padding: 0.5rem 0;
+            height: unset;
         }
         div {
             display: flex;
@@ -155,6 +155,20 @@
     }
 }
 </style>
+<script>
+export default {
+    data: function () {
+        return {
+            isOpened: false
+        }
+    },
+    methods: {
+        open: function () {
+            this.isOpened = !this.isOpened
+        }
+    }
+}
+</script>
 <template>
     <div class="obj-navbar">
         <div class="obj-navbar-container">
@@ -163,10 +177,10 @@
                     <img src="../assets/logo.png" alt="" class="obj-navbar-logo">
                 </span>
                 <span class="obj-navbar-button">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars" @click="open"></i>
                 </span>
             </div>
-            <div class="obj-navbar-end">
+            <div class="obj-navbar-end" v-bind:class="{'obj-navbar-opened': isOpened }" >
                 <ul class="obj-navbar-menu">
                     <li class="obj-navbar-item obj-navbar-button">
                         <a href="" class="obj-navbar-link">
