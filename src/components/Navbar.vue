@@ -34,7 +34,8 @@
                         align-items: center;
                         justify-content: center;
                         height: 76px;
-                        padding: 0 3.5rem;
+                        padding: 0 1.5rem;
+                        width: 150px;
                         position: relative;
                         cursor: pointer;
 
@@ -46,6 +47,25 @@
                             text-decoration: none;
                             font-size: 1.1rem;
                             transform: color 0.1s ease;
+                        }
+
+                        &.obj-navbar-button {
+                            align-items: center;
+                            height: unset !important;
+                            z-index: 1;
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                background-color: #e32f12;
+                                z-index: -1;
+                            }
+                            &:hover {
+                                .obj-navbar-link {
+                                    color: white;
+                                }
+                            }
                         }
 
                         &::after {
@@ -86,24 +106,19 @@
             </div>
             <div class="obj-navbar-end">
                 <ul class="obj-navbar-menu">
-                    <li class="obj-navbar-item">
+                    <li class="obj-navbar-item obj-navbar-button">
                         <a href="" class="obj-navbar-link">
-                            test
+                            get started
                         </a>
                     </li>
                     <li class="obj-navbar-item">
                         <a href="" class="obj-navbar-link">
-                            test
+                            home
                         </a>
                     </li>
                     <li class="obj-navbar-item">
                         <a href="" class="obj-navbar-link">
-                            test
-                        </a>
-                    </li>
-                    <li class="obj-navbar-item">
-                        <a href="" class="obj-navbar-link">
-                            test
+                            documentation
                         </a>
                     </li>
                 </ul>
