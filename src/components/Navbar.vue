@@ -28,11 +28,37 @@
             }
             &.obj-navbar-start {
                 flex-basis: 25%;
+                .obj-navbar-button {
+                    display: none;
+                    cursor: pointer;
+                }
                 .obj-navbar-brand {
                     .obj-navbar-logo {
                         width: 64px;
                         vertical-align: middle;
                         border-radius: 4px;
+                    }
+                }
+                @media (max-width: 768px) {
+                    display: flex;
+                    flex-flow: row wrap;
+                    span {
+                        display: flex;
+                        flex: 1 0 calc(100% / 3);
+                        align-items: center;
+                        &.obj-navbar-button {
+                            display: flex;
+                            font-size: 2rem;
+                            justify-content: flex-end;
+                            margin: 0 2rem 0 0;
+                        }
+                        &.obj-navbar-brand {
+                            .obj-navbar-logo {
+                                display: flex;
+                                justify-content: flex-start;
+                                margin: 0 0 0 2rem;
+                            }
+                        }
                     }
                 }
             }
@@ -41,6 +67,10 @@
                 justify-content: flex-end;
                 @media (max-width: 768px) {
                     margin: 1rem 0 0;
+                    display: none;
+                }
+                &.obj-navbar-opened {
+                    display: flex;
                 }
                 .obj-navbar-menu {
                     display: flex;
@@ -131,6 +161,9 @@
             <div class="obj-navbar-start">
                 <span class="obj-navbar-brand">
                     <img src="../assets/logo.png" alt="" class="obj-navbar-logo">
+                </span>
+                <span class="obj-navbar-button">
+                    <i class="fas fa-bars"></i>
                 </span>
             </div>
             <div class="obj-navbar-end">
