@@ -85,6 +85,7 @@
                         width: 150px;
                         position: relative;
                         cursor: pointer;
+                        text-decoration: none;
 
                         @media (max-width: 768px) {
                             flex-basis: 100% !important;
@@ -191,21 +192,21 @@ export default {
             </div>
             <div class="obj-navbar-end" v-bind:class="{'obj-navbar-opened': isOpened }" >
                 <ul class="obj-navbar-menu">
-                    <li class="obj-navbar-item obj-navbar-button">
-                        <router-link to="/getstarted" class="obj-navbar-link">
+                    <router-link to="/get-started" class="obj-navbar-item obj-navbar-button">
+                        <a class="obj-navbar-link">
                             get started
-                        </router-link>
-                    </li>
-                    <li class="obj-navbar-item">
-                        <router-link to="/" class="obj-navbar-link">
+                        </a>
+                    </router-link>
+                    <router-link to="/" class="obj-navbar-item">
+                        <a class="obj-navbar-link">
                             home
-                        </router-link>
-                    </li>
-                    <li class="obj-navbar-item">
-                        <router-link to="/about" class="obj-navbar-link">
+                        </a>
+                    </router-link>
+                    <router-link to="/documentation" class="obj-navbar-item">
+                        <a class="obj-navbar-link">
                             documentation
-                        </router-link>
-                    </li>
+                        </a>
+                    </router-link>
                 </ul>
             </div>
         </div>

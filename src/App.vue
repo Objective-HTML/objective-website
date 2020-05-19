@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <Navbar />
+    <header class="obj-header">
+      
+    </header>
   </div>
 </template>
 
