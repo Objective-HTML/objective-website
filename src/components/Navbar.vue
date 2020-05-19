@@ -148,6 +148,14 @@
                                 }
                             }
                         }
+                        @media (max-width: 768px) {
+                            &:hover {
+                                .obj-navbar-link {
+                                    color: #e32f12;
+                                }
+                            }
+
+                        }
                     }
                 }
             }
