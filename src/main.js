@@ -25,6 +25,10 @@ const route = [
   {
     path: '/get-started',
     component: Starter
+  },
+  { 
+    path: '*', 
+    component: App 
   }
 ]
 
