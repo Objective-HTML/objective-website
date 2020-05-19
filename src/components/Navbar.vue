@@ -165,6 +165,7 @@
 </style>
 <script>
 export default {
+    name: 'Navbar',
     data: function () {
         return {
             isOpened: false
@@ -191,19 +192,19 @@ export default {
             <div class="obj-navbar-end" v-bind:class="{'obj-navbar-opened': isOpened }" >
                 <ul class="obj-navbar-menu">
                     <li class="obj-navbar-item obj-navbar-button">
-                        <a href="" class="obj-navbar-link">
+                        <router-link to="/getstarted" class="obj-navbar-link">
                             get started
-                        </a>
+                        </router-link>
                     </li>
                     <li class="obj-navbar-item">
-                        <a href="" class="obj-navbar-link">
+                        <router-link to="/" class="obj-navbar-link">
                             home
-                        </a>
+                        </router-link>
                     </li>
                     <li class="obj-navbar-item">
-                        <a href="" class="obj-navbar-link">
+                        <router-link to="/about" class="obj-navbar-link">
                             documentation
-                        </a>
+                        </router-link>
                     </li>
                 </ul>
             </div>
