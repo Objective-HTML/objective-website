@@ -1,8 +1,8 @@
 <style lang="scss" scoped>
 .obj-navbar {
     background-color: white;
-    padding: 0.5rem 0;
     .obj-navbar-container {
+        height: 76px;
         position: relative;
         width: 50%;
         margin: 0 auto;
@@ -24,6 +24,40 @@
             }
             &.obj-navbar-end {
                 flex-basis: 75%;
+                justify-content: flex-end;
+                .obj-navbar-menu {
+                    display: flex;
+                    flex-flow: row wrap;
+                    .obj-navbar-item {
+                        display: flex;
+                        flex: 1 0;
+                        align-items: center;
+                        justify-content: center;
+                        height: 76px;
+                        padding: 0 3.5rem;
+                        position: relative;
+                        cursor: pointer;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: 0;
+                            width: 100%;
+                            height: 4px;
+                            opacity: 0;
+                            transition: opacity 0.1s ease;
+                            background-color: #e32f12;
+                        }
+                        
+                        &:hover {
+                            &::after {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
