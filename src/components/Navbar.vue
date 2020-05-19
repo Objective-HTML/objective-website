@@ -38,6 +38,16 @@
                         position: relative;
                         cursor: pointer;
 
+                        .obj-navbar-link {
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 300;
+                            color: #333333;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-size: 1.1rem;
+                            transform: color 0.1s ease;
+                        }
+
                         &::after {
                             content: '';
                             position: absolute;
@@ -45,13 +55,16 @@
                             transform: translateX(-50%);
                             bottom: 0;
                             width: 100%;
-                            height: 4px;
+                            height: 1px;
                             opacity: 0;
                             transition: opacity 0.1s ease;
                             background-color: #e32f12;
                         }
-                        
+
                         &:hover {
+                            .obj-navbar-link {
+                                color: #e32f12;
+                            }
                             &::after {
                                 opacity: 1;
                             }
