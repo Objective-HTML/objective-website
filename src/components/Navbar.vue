@@ -8,10 +8,24 @@
         margin: 0 auto;
         display: flex;
         flex-flow: row wrap;
+        @media (max-width: 1440px) {
+            width: 75%;
+        }
+        @media (max-width: 960px) {
+            width: 90%;
+        }
+        @media (max-width: 768px) {
+            height: unset;
+            padding: 0.5rem 0;
+        }
         div {
             display: flex;
             flex: 1 0;
             align-items: center;
+            @media (max-width: 768px) {
+                flex-basis: 100% !important;
+                justify-content: center !important;
+            }
             &.obj-navbar-start {
                 flex-basis: 25%;
                 .obj-navbar-brand {
@@ -25,6 +39,9 @@
             &.obj-navbar-end {
                 flex-basis: 75%;
                 justify-content: flex-end;
+                @media (max-width: 768px) {
+                    margin: 1rem 0 0;
+                }
                 .obj-navbar-menu {
                     display: flex;
                     flex-flow: row wrap;
@@ -38,6 +55,14 @@
                         width: 150px;
                         position: relative;
                         cursor: pointer;
+
+                        @media (max-width: 768px) {
+                            flex-basis: 100% !important;
+                            justify-content: center !important;
+                            margin: 1rem 0;
+                            padding: 0;
+                            height: auto;
+                        }
 
                         .obj-navbar-link {
                             font-family: 'Montserrat', sans-serif;
@@ -61,9 +86,11 @@
                                 background-color: #e32f12;
                                 z-index: -1;
                             }
-                            &:hover {
-                                .obj-navbar-link {
-                                    color: white;
+                            @media (min-width: 768px) {
+                                &:hover {
+                                    .obj-navbar-link {
+                                        color: white;
+                                    }
                                 }
                             }
                         }
@@ -81,12 +108,14 @@
                             background-color: #e32f12;
                         }
 
-                        &:hover {
-                            .obj-navbar-link {
-                                color: #e32f12;
-                            }
-                            &::after {
-                                opacity: 1;
+                        @media (min-width: 768px) {
+                            &:hover {
+                                .obj-navbar-link {
+                                    color: #e32f12;
+                                }
+                                &::after {
+                                    opacity: 1;
+                                }
                             }
                         }
                     }
