@@ -30,7 +30,9 @@ const route = [
 
 const router = new VueRouter({
   routes: route,
-  mode: 'history'
+  mode: 'history',
+  transitionOnLoad: true,
+  history: true,
 })
 
 Vue.config.productionTip = false
