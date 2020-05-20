@@ -61,6 +61,31 @@
                         }
                     }
                 }
+                @media (max-width: 240px) {
+                    display: flex;
+                    flex-flow: row wrap;
+                    margin: 0 auto;
+                    span {
+                        display: flex;
+                        flex: 1 0 100%;
+                        align-items: center;
+                        justify-content: center;
+                        &.obj-navbar-button {
+                            display: flex;
+                            font-size: 2rem;
+                            justify-content: center;
+                            margin: 1rem auto 0;
+                        }
+                        &.obj-navbar-brand {
+                            .obj-navbar-logo {
+                                display: flex;
+                                justify-content: center;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    
+                }
             }
             &.obj-navbar-end {
                 flex-basis: 75%;
@@ -69,12 +94,17 @@
                     margin: 1rem 0 0;
                     display: none;
                 }
+                @media (max-width: 240px) {
+                    padding: 0;
+                    margin: 0 0 0 -0.5rem;
+                }
                 &.obj-navbar-opened {
                     display: flex;
                 }
                 .obj-navbar-menu {
                     display: flex;
                     flex-flow: row wrap;
+                    list-style-type: none;
                     .obj-navbar-item {
                         display: flex;
                         flex: 1 0;
@@ -102,6 +132,9 @@
                             text-decoration: none;
                             font-size: 1.1rem;
                             transition: color 0.1s ease;
+                            @media (max-width: 240px) {
+                                font-size: 0.75rem;
+                            }
                         }
 
                         &.obj-navbar-button {
