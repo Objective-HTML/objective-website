@@ -118,6 +118,7 @@
     align-items: center;
     justify-content: center;
     .obj-code {
+      margin: 3rem 0 0;
       pre { 
         padding: 0 5rem 0 2rem;
       }
