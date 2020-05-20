@@ -141,7 +141,6 @@
           overflow-x: scroll;
         }
         code {
-          
           overflow: scroll;
         }
       }
@@ -152,6 +151,9 @@
       max-width: 75%;
       .obj-title {
         font-weight: 800;
+        @media (max-width: 480px) {
+          font-size: 1rem;
+        }
       }
       .obj-paragraph {
         font-size: 1.1rem;
