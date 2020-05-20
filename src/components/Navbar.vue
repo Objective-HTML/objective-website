@@ -129,6 +129,11 @@
                                     }
                                 }
                             }
+                            @media (max-width: 768px) {
+                                .obj-navbar-link {
+                                    color: #333333;
+                                }
+                            }
                         }
 
                         &::after {
@@ -155,6 +160,8 @@
                             }
                         }
                         @media (max-width: 768px) {
+                            background-color: transparent !important;
+                            color: #333333 !important;
                             &:hover {
                                 .obj-navbar-link {
                                     color: #e32f12;
