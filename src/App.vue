@@ -54,6 +54,12 @@
         </div>
       </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
   </div>
 </template>
 
@@ -167,6 +173,9 @@
       .obj-buttons {
         margin: 3rem 0 0;
         .obj-button {
+          width: 200px;
+          text-align: center;
+          display: block;
           color: #e32f12;
           text-decoration: none;
           font-weight: 600;

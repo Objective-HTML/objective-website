@@ -101,7 +101,7 @@
                             text-transform: uppercase;
                             text-decoration: none;
                             font-size: 1.1rem;
-                            transform: color 0.1s ease;
+                            transition: color 0.1s ease;
                         }
 
                         &.obj-navbar-button {
