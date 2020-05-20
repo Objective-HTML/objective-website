@@ -120,6 +120,9 @@
   flex-flow: row wrap;
   width: 75%;
   margin: 5rem auto 0;
+  @media (max-width: 768px) {
+    width: 95%;
+  }
   .obj-container {
     display: flex;
     flex: 1 0 calc(100% / 2);
@@ -127,8 +130,20 @@
     justify-content: center;
     .obj-code {
       margin: 3rem 0 0;
+      @media (max-width: 768px) {
+        width: 85vw;
+      }
       pre { 
         padding: 0 5rem 0 2rem;
+        @media (max-width: 768px) {
+          max-width: 100vw;
+          padding: 0 1rem;
+          overflow-x: scroll;
+        }
+        code {
+          
+          overflow: scroll;
+        }
       }
     }
     .obj-text {
