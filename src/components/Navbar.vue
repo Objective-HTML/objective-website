@@ -1,6 +1,23 @@
 <style lang="scss" scoped>
 .obj-navbar {
     background-color: white;
+    top: 0;
+    position: relative;
+    &.obj-navbar-scrolled {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        .obj-navbar-start {
+            display: none;
+        }
+        .obj-navbar-end {
+            flex-basis: 100%;
+            justify-content: center !important;
+            .obj-navbar-menu {  
+                justify-content: center;
+            }
+        }
+    }
     .obj-navbar-container {
         height: 76px;
         position: relative;
@@ -214,7 +231,8 @@ export default {
     name: 'Navbar',
     data: function () {
         return {
-            isOpened: false
+            isOpened: false,
+            oldScroll: 0
         }
     },
     methods: {
@@ -223,6 +241,20 @@ export default {
         }
     }
 }
+document.addEventListener('scroll', function () {
+    if (window.scrollY > 100) {
+        if (this.oldScroll > scrollY) {
+            document.getElementsByClassName('obj-navbar')[0].classList.remove('obj-navbar-scrolled')
+        } else {
+            document.getElementsByClassName('obj-navbar')[0].classList.add('obj-navbar-scrolled')
+        }
+    }
+    else {
+        document.getElementsByClassName('obj-navbar')[0].classList.remove('obj-navbar-scrolled')
+
+    }
+    this.oldScroll = scrollY
+})
 </script>
 <template>
     <div class="obj-navbar">
