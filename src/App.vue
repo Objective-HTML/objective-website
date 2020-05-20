@@ -77,6 +77,11 @@
         height: 5rem;
         margin: 0 auto;
         text-align: center;
+        @media (max-width: 768px) {
+          width: 80%;
+          padding: 1rem;
+          overflow-x: scroll;
+        }
       }
     }
     &:nth-child(2) {
