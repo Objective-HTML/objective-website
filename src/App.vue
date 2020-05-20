@@ -100,6 +100,14 @@
           text-align: center;
           opacity: 0.5;
           color: #dddddd;
+          @media (max-width: 960px) {
+            font-size: 1.5rem;
+            margin: 0 1rem;
+          }
+          @media (max-width: 768px) {
+            font-size: 1.5rem;
+            margin: 0;
+          }
         }
       }
     }
