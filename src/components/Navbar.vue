@@ -82,7 +82,6 @@
                         justify-content: center;
                         height: 76px;
                         padding: 0 1.5rem;
-                        width: 150px;
                         position: relative;
                         cursor: pointer;
                         text-decoration: none;
@@ -109,13 +108,19 @@
                             align-items: center;
                             height: unset !important;
                             z-index: 1;
+                            background-color: #e32f12;
                             &::after {
                                 content: '';
                                 position: absolute;
                                 width: 100%;
                                 height: 100%;
-                                background-color: #e32f12;
+                                background-color: #d62b10;
                                 z-index: -1;
+                            }
+                            .obj-navbar-link {
+                                color: white;
+                                width: 150px;
+                                text-align: center;
                             }
                             @media (min-width: 768px) {
                                 &:hover {
