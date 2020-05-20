@@ -12,6 +12,9 @@
   &.obj-loader-finished {
     opacity: 0;
     pointer-events: none;
+    .obj-logo {
+      width: 0;
+    }
   }
   .obj-container {
     .obj-logo {
@@ -20,6 +23,9 @@
       left: 50%;
       transform: translate(-50%, -50%);
       animation: logo-loader ease-in-out 2.5s infinite;
+      @media (max-width: 640px) {
+        width: 100%;
+      }
     }
   }
 }
