@@ -109,16 +109,18 @@ objective help
             text-align: center;
           }
           @media (max-width: 768px) {
+            overflow: auto;
             .obj-code {
-                max-width: 100%;
-                pre {
-                  max-width: 75%;
-                padding-right: 0;
-                  code {
-                    max-width: 50%;
-
-                  }
+              max-width: 80%;
+                margin: 0 auto;
+              pre {
+                padding: 1rem 0;
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                code {
                 }
+              }
             }
           }
           .obj-text {
@@ -199,6 +201,8 @@ objective help
       justify-content: center;
       @media (max-width: 1200px) {
         margin: 2.5rem 0;
+        flex-basis: 100%;
+        position: relative;
       }
       .obj-code {
         pre {
@@ -208,15 +212,15 @@ objective help
         }
       }
       @media (max-width: 768px) {
+        overflow: auto;
         .obj-code {
-          width: 100%;
+          max-width: 80%;
           pre {
-            width: 75%;
-            padding-right: 0;
+            padding: 1rem 0;
             display: block;
             margin: 0 auto;
+            position: relative;
             code {
-              width: 50%;
             }
           }
         }
@@ -239,6 +243,10 @@ objective help
         .obj-paragraph {
           width: 425px;
           color: #333333;
+          @media (max-width: 768px) {
+            width: 50%;
+            margin: 0 auto;
+          }
         }
         .obj-buttons {
           margin: 2rem auto 0;
@@ -252,11 +260,6 @@ objective help
             padding: 0.5rem 2rem;
             text-decoration: none;
             text-transform: uppercase;
-            @media (max-width: 1200px) {
-              display: flex;
-              margin: 0 auto !important;
-              justify-content: center;
-            }
             position: relative;
             top: 0;
             transition: top 0.1s ease;
@@ -272,6 +275,17 @@ objective help
               border-color: #e32f12;
               color: white;
               background: #e32f12;
+            }
+            @media (max-width: 1200px) {
+              display: flex;
+              margin: 0 auto !important;
+              justify-content: center;
+            }
+            @media (max-width: 768px) {
+              display: block;
+              margin: 1rem auto !important;
+              padding: 1rem 0;
+              width: 80%;
             }
           }
         }
