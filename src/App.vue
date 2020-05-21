@@ -86,6 +86,12 @@ objective help
       position: relative;
       width: 75%;
       margin: 0 auto;
+      @media (max-width: 1400px) {
+        width: 95%;
+      }
+      @media (max-width: 960px) {
+        width: 75%;
+      }
       .obj-wrapper {
         display: flex;
         flex-flow: row wrap;
@@ -157,13 +163,24 @@ objective help
   height: 500px;
   display: flex;
   flex-flow: row wrap;
+  @media (max-width: 1200px) {
+    height: unset;
+    margin: 5rem 0 0 0;
+  }
   .obj-wrapper {
     display: flex;
-    flex: 1 0;
-    align-items: center;
-    justify-content: center;
+    flex-flow: row wrap;
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
     .obj-container {
-      margin: 0 5rem;
+      display: flex;
+      flex: 1 0 calc(100% / 3);
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 1200px) {
+        margin: 2.5rem 0;
+      }
       .obj-code {
         pre {
           padding: 1rem 2rem 0.5rem;
@@ -173,6 +190,9 @@ objective help
       }
       .obj-text {
         font-family: 'Montserrat', sans-serif;
+        @media (max-width: 1200px) {
+          text-align: center;
+        }
         .obj-title {
           font-weight: 300;
           font-size: 3rem;
@@ -196,6 +216,11 @@ objective help
             padding: 0.5rem 2rem;
             text-decoration: none;
             text-transform: uppercase;
+            @media (max-width: 1200px) {
+              display: flex;
+              margin: 0 auto !important;
+              justify-content: center;
+            }
             position: relative;
             top: 0;
             transition: top 0.1s ease;
