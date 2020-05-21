@@ -136,6 +136,11 @@
       flex: 1 0 calc(100% / 2);
       align-items: center;
       justify-content: center;
+      @media (max-width: 1100px) {
+        flex-basis: 100% !important;
+        margin: 2rem 0;
+        text-align: center;
+      }
       .obj-text {
         width: 50%;
         margin: 0 auto;
@@ -146,6 +151,10 @@
           position: relative;
           margin: 0 0 2rem 0;
           width: fit-content;
+          @media (max-width: 1100px) {
+            text-align: center;
+            margin: 0 auto 2rem;
+          }
           &::after {
             position: absolute;
             content: '';
@@ -155,10 +164,18 @@
             height: 3px;
             background-color: #333333;
             transition: all 0.5s ease;
+            @media (max-width: 1100px) {
+              left: 50%;
+              transform: translateX(-50%);
+            }
           }
           &:hover {
             &::after {
               animation: title-animation 0.5s ease forwards;
+              @media (max-width: 1100px) {
+                animation: none;
+                
+              }
             }
           }
         }
@@ -171,7 +188,7 @@
           top: 0;
           transition: all 0.5s ease;
           padding: 0 2rem;
-          width: 50%;
+          min-width: 50%;
           margin: 0 auto;
           &:hover {
             top: -5px;
