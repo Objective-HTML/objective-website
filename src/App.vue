@@ -63,7 +63,7 @@
               Easy to code
             </h1>
             <p class="obj-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium illo esse eos temporibus quod aliquam eveniet officiis, unde exercitationem maiores facilis quia enim commodi dolor, assumenda iste nam repellat aliquid.
+              Objective HTML is a simple language to remember both in its syntax and its use. In addition to being simple to use, it has a rather pleasant and intuitive syntax.
             </p>
           </div>
         </div>
@@ -71,14 +71,9 @@
           <div v-highlight class="obj-code">
             <pre class="language-html"><code>
 &lt;objective&gt;
-  &lt;!-- Objective HTML is a simple language --&gt;
-
-  &lt;define name=username&gt;
-    User
-  &lt;/define&gt;
 
   &lt;print&gt;
-    Hello {username}!
+    Hello world!
   &lt;/print&gt;
 
 &lt;/objective&gt;
@@ -91,15 +86,16 @@
           <div v-highlight class="obj-code">
             <pre class="language-html"><code>
 &lt;objective&gt;
-  &lt;!-- Objective HTML is a simple language --&gt;
-
-  &lt;define name=username&gt;
-    User
+  
+  &lt;define name=number&gt;
+    5
   &lt;/define&gt;
 
-  &lt;print&gt;
-    Hello {username}!
-  &lt;/print&gt;
+  &lt;if {number} higher than {0}&gt;
+    &lt;print&gt;
+      {number} is higher than 0!
+    &lt;/print&gt;
+  &lt;/if&gt;
 
 &lt;/objective&gt;
             </code></pre>
@@ -108,41 +104,11 @@
         <div class="obj-container">
           <div class="obj-text">
             <h1 class="obj-title">
-              Easy to code
+              Easy to learn
             </h1>
             <p class="obj-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium illo esse eos temporibus quod aliquam eveniet officiis, unde exercitationem maiores facilis quia enim commodi dolor, assumenda iste nam repellat aliquid.
+              Objective HTML is an intuitive language with impressive simplicity. No real knowledge is necessary to learn how it works. 
             </p>
-          </div>
-        </div>
-      </div>
-      <div class="obj-row">
-        <div class="obj-container">
-          <div class="obj-text">
-            <h1 class="obj-title">
-              Easy to code
-            </h1>
-            <p class="obj-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium illo esse eos temporibus quod aliquam eveniet officiis, unde exercitationem maiores facilis quia enim commodi dolor, assumenda iste nam repellat aliquid.
-            </p>
-          </div>
-        </div>
-        <div class="obj-container">
-          <div v-highlight class="obj-code">
-            <pre class="language-html"><code>
-&lt;objective&gt;
-  &lt;!-- Objective HTML is a simple language --&gt;
-
-  &lt;define name=username&gt;
-    User
-  &lt;/define&gt;
-
-  &lt;print&gt;
-    Hello {username}!
-  &lt;/print&gt;
-
-&lt;/objective&gt;
-            </code></pre>
           </div>
         </div>
       </div>
@@ -198,12 +164,15 @@
         }
       }
       .obj-code {
+        width: 100%;
         pre {
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
           position: relative;
           top: 0;
           transition: all 0.5s ease;
           padding: 0 2rem;
+          width: 50%;
+          margin: 0 auto;
           &:hover {
             top: -5px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
