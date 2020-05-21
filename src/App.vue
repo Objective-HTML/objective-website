@@ -54,41 +54,187 @@
         </div>
       </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+    <section class="obj-gallery">
+      <div class="obj-row">
+        <div class="obj-container">
+          <div class="obj-text">
+            <h1 class="obj-title">
+              Easy to code
+            </h1>
+            <p class="obj-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium illo esse eos temporibus quod aliquam eveniet officiis, unde exercitationem maiores facilis quia enim commodi dolor, assumenda iste nam repellat aliquid.
+            </p>
+          </div>
+        </div>
+        <div class="obj-container">
+          <div v-highlight class="obj-code">
+            <pre class="language-html"><code>
+&lt;objective&gt;
+  &lt;!-- Objective HTML is a simple language --&gt;
+
+  &lt;define name=username&gt;
+    User
+  &lt;/define&gt;
+
+  &lt;print&gt;
+    Hello {username}!
+  &lt;/print&gt;
+
+&lt;/objective&gt;
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-container">
+          <div v-highlight class="obj-code">
+            <pre class="language-html"><code>
+&lt;objective&gt;
+  &lt;!-- Objective HTML is a simple language --&gt;
+
+  &lt;define name=username&gt;
+    User
+  &lt;/define&gt;
+
+  &lt;print&gt;
+    Hello {username}!
+  &lt;/print&gt;
+
+&lt;/objective&gt;
+            </code></pre>
+          </div>
+        </div>
+        <div class="obj-container">
+          <div class="obj-text">
+            <h1 class="obj-title">
+              Easy to code
+            </h1>
+            <p class="obj-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium illo esse eos temporibus quod aliquam eveniet officiis, unde exercitationem maiores facilis quia enim commodi dolor, assumenda iste nam repellat aliquid.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-container">
+          <div class="obj-text">
+            <h1 class="obj-title">
+              Easy to code
+            </h1>
+            <p class="obj-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium illo esse eos temporibus quod aliquam eveniet officiis, unde exercitationem maiores facilis quia enim commodi dolor, assumenda iste nam repellat aliquid.
+            </p>
+          </div>
+        </div>
+        <div class="obj-container">
+          <div v-highlight class="obj-code">
+            <pre class="language-html"><code>
+&lt;objective&gt;
+  &lt;!-- Objective HTML is a simple language --&gt;
+
+  &lt;define name=username&gt;
+    User
+  &lt;/define&gt;
+
+  &lt;print&gt;
+    Hello {username}!
+  &lt;/print&gt;
+
+&lt;/objective&gt;
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 </template>
 
 <style lang="scss" scoped>
-
+.obj-gallery {
+  position: relative;
+  margin: 3rem auto 0;
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  .obj-row {
+    margin: 2rem 0;
+    display: flex;
+    flex: 1 0 100%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    .obj-container {
+      display: flex;
+      flex: 1 0 calc(100% / 2);
+      align-items: center;
+      justify-content: center;
+      .obj-text {
+        width: 50%;
+        margin: 0 auto;
+        font-family: 'Montserrat', sans-serif;
+        .obj-title {
+          text-transform: uppercase;
+          color: #333333;
+          position: relative;
+          margin: 0 0 2rem 0;
+          width: fit-content;
+          &::after {
+            position: absolute;
+            content: '';
+            bottom: -0.4rem;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #333333;
+            transition: all 0.5s ease;
+          }
+          &:hover {
+            &::after {
+              animation: title-animation 0.5s ease forwards;
+            }
+          }
+        }
+      }
+      .obj-code {
+        pre {
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+          position: relative;
+          top: 0;
+          transition: all 0.5s ease;
+          padding: 0 2rem;
+          &:hover {
+            top: -5px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes title-animation {
+  from {
+    left: 0;
+    width: 50px;
+  }
+  25% {
+    left: 0;
+    width: 100px;
+  }
+  50% {
+    left: calc(100% - 50px);
+    width: 50px;
+  }
+  75% {
+    left: 0;
+    width: 100%;
+  }
+  to {
+    left: 0;
+    width: 50px;
+  }
+}
 .obj-install {
   margin: 5rem 0 0;
   position: relative;
