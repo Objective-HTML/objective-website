@@ -123,7 +123,7 @@
   display: flex;
   flex-flow: row wrap;
   .obj-row {
-    margin: 2rem 0;
+    margin: 6rem 0;
     display: flex;
     flex: 1 0 100%;
     justify-content: center;
