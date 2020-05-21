@@ -44,7 +44,7 @@
 </style>
 
 <template>
-  <div id="app">
+  <div id="loader">
     <div class="obj-loader">
       <span class="obj-container">
         <img src="../assets/loader.webp" alt="" class="obj-logo">
