@@ -1,12 +1,12 @@
 <style lang="scss" scoped>
 .obj-loader {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: #e32f12;
-  z-index: 10;
+  z-index: 100;
   opacity: 1;
   transition: all 0.5s ease;
   &.obj-loader-finished {
