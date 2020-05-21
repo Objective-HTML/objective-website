@@ -36,10 +36,109 @@
         </div>
       </div>
     </header>
+    <section class="obj-section obj-installation">
+      <div class="obj-container">
+        <div class="obj-wrapper">
+          <div class="obj-item">
+            <div class="obj-code">
+              <div v-highlight class="obj-code">
+                <pre class="language-bash"><code>
+# To install it, you'll need 
+# Node.js version > 14 and NPM version > 6
+npm i -g objective-cli
+
+# Then, you can type the 
+# following command to get help.
+
+objective help
+
+                </code></pre>
+              </div>
+            </div>
+          </div>
+          <div class="obj-item">
+            <div class="obj-text">
+              <h1 class="obj-title">
+                Easy to install
+              </h1>
+              <p class="obj-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi itaque officiis, sunt unde quasi ducimus repellendus ipsum quae magni quidem neque repudiandae, quos exercitationem suscipit esse, possimus delectus? Tenetur, ipsum.Harum ab architecto commodi obcaecati blanditiis iste, fugiat provident beatae vel libero explicabo facere est odit animi? Dolor, illo! Nam excepturi quaerat voluptates aliquid a fugiat aut recusandae facere nisi!
+              </p>
+            <div class="obj-buttons">
+              <router-link class="obj-button" to="/get-started">Issue during install?</router-link>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.obj-section {
+  margin: 2rem 0 0;
+  &.obj-installation {
+    position: relative;
+    background-color: rgb(240, 240, 240);
+    .obj-container {
+      padding: 5rem 0;
+      position: relative;
+      width: 75%;
+      margin: 0 auto;
+      .obj-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        .obj-item {
+          display: flex;
+          flex: 1 0 calc(100% / 3);
+          align-items: center;
+          justify-content: center;
+          .obj-text {
+            width: 75%;
+            font-family: 'Montserrat', sans-serif;
+            .obj-title {
+              font-size: 2rem;
+              margin: 0 0 2rem 0;
+              color: #333333;
+              position: relative;
+              &::after {
+                content: '';
+                position: absolute;
+                bottom: -0.5rem;
+                left: 0;
+                width: 50px;
+                height: 4px;
+                background-color: #333333;
+              }
+            }
+            .obj-buttons {
+              margin: 2rem auto 0;
+              text-align: center;
+              display: flex;
+              flex-flow: row wrap;
+              .obj-button {
+                border: solid 2px;
+                font-weight: 600;
+                padding: 0.5rem 2rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                position: relative;
+                top: 0;
+                transition: top 0.1s ease;
+                color: #e32f12;
+                border-color: #e32f12;
+                &:hover {
+                  top: -2px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .obj-header {
   position: relative;
   height: 500px;
@@ -66,9 +165,11 @@
           font-size: 3rem;
           text-transform: uppercase;
           margin: 0 0 1rem 0;
+          color: #333333;
         }
         .obj-paragraph {
           width: 425px;
+          color: #333333;
         }
         .obj-buttons {
           margin: 2rem auto 0;
