@@ -80,7 +80,7 @@ objective help
   margin: 2rem 0 0;
   &.obj-installation {
     position: relative;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(246, 246, 246);
     .obj-container {
       padding: 5rem 0;
       position: relative;
