@@ -113,7 +113,7 @@
         </div>
       </div>
     </section>
-
+    <Footer />
   </div>
 </template>
 
@@ -334,11 +334,13 @@
 
 <script>
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import 'vue-code-highlight/themes/prism-okaidia.css'
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Footer
   }
 }
 </script>

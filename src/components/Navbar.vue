@@ -253,7 +253,7 @@ document.addEventListener('scroll', function () {
 })
 </script>
 <template>
-    <div class="obj-navbar">
+    <nav class="obj-navbar">
         <div class="obj-navbar-container">
             <div class="obj-navbar-start">
                 <span class="obj-navbar-brand">
@@ -283,5 +283,5 @@ document.addEventListener('scroll', function () {
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
 </template>
