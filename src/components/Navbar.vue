@@ -243,11 +243,7 @@ export default {
 }
 document.addEventListener('scroll', function () {
     if (window.scrollY > 100) {
-        if (this.oldScroll > scrollY) {
-            document.getElementsByClassName('obj-navbar')[0].classList.remove('obj-navbar-scrolled')
-        } else {
-            document.getElementsByClassName('obj-navbar')[0].classList.add('obj-navbar-scrolled')
-        }
+        if (!document.getElementsByClassName('obj-navbar')[0].classList.contains('obj-navbar-scrolled')) document.getElementsByClassName('obj-navbar')[0].classList.add('obj-navbar-scrolled')
     }
     else {
         document.getElementsByClassName('obj-navbar')[0].classList.remove('obj-navbar-scrolled')
