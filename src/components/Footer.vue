@@ -42,7 +42,6 @@
 <style lang="scss" scoped>
 .obj-footer {
   position: relative;
-  margin: 5rem 0 0;
   padding: 5rem 0;
   background-color: #e32f12;
   .obj-footer-container {
