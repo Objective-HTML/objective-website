@@ -94,6 +94,11 @@ objective help
           flex: 1 0 calc(100% / 3);
           align-items: center;
           justify-content: center;
+          @media (max-width: 960px) {
+            flex-basis: 100%;
+            margin: 3rem 0;
+            text-align: center;
+          }
           .obj-text {
             width: 75%;
             font-family: 'Montserrat', sans-serif;
@@ -110,6 +115,11 @@ objective help
                 width: 50px;
                 height: 4px;
                 background-color: #333333;
+                @media (max-width: 960px) {
+                  left: 50%;
+                  transform: translateX(-50%);
+                  width: 75px;
+                }
               }
             }
             .obj-buttons {
@@ -130,6 +140,9 @@ objective help
                 border-color: #e32f12;
                 &:hover {
                   top: -2px;
+                }
+                @media (max-width: 960px) {
+                  margin: 0 auto;
                 }
               }
             }
