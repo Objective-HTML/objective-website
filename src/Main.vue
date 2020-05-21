@@ -1,15 +1,21 @@
 <template>
   <div id="app">
     <Loader />
+    <Navbar />
     <router-view />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Loader from './components/Loader'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 export default {
   components: {
-    Loader
+    Loader,
+    Navbar,
+    Footer
   },
   mounted: function () {
     document.body.style.overflow = 'hidden'

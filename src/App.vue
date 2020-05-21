@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <Navbar />
     <header class="obj-header">
       <div class="obj-container">
         <div class="obj-text">
@@ -113,7 +112,6 @@
         </div>
       </div>
     </section>
-    <Footer />
   </div>
 </template>
 
@@ -350,14 +348,10 @@
 </style>
 
 <script>
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import 'vue-code-highlight/themes/prism-okaidia.css'
 export default {
   name: 'App',
   components: {
-    Navbar,
-    Footer
   }
 }
 </script>
