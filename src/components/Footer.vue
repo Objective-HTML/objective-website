@@ -57,25 +57,39 @@
       justify-content: center;
       align-items: center;
       font-family: 'Montserrat', sans-serif;
+      @media (max-width: 1200px) {
+        flex-basis: 100% !important;
+        margin: 1rem 0;
+      }
       .obj-footer-title {
         font-weight: 800;
         font-size: 2rem;
         color: white;
         .obj-footer-subtitle {
+          display: block;
           font-size: 1.5rem;
           position: relative;
-          top: -1rem;
+          top: -0.5rem;
           opacity: 0.8;
           font-weight: 700;
+          @media (max-width: 1200px) {
+            text-align: center;
+          }
         }
       }
       .obj-footer-paragraph {
         color: white;
+        @media (max-width: 1200px) {
+          text-align: center;
+        }
       }
       .obj-footer-list {
         list-style-type: none;
         .obj-footer-element {
           margin: 1rem 0;
+          @media (max-width: 1200px) {
+            text-align: center;
+          }
           .obj-footer-link {
             color: #571309;
             text-decoration: none;
