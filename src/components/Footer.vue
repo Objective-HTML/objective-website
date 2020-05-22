@@ -119,7 +119,28 @@
 
 <script>
 export default {
-
+  mounted: function () {
+    window.addEventListener('load', () => {
+      const test = Array.from(document.getElementById('app').childNodes).filter(x => !x.classList.contains('obj-footer')).map(x => x.clientHeight).reduce((acc, cur) => acc + cur)
+      console.log(test + this.$el.clientHeight, window.innerHeight, document.getElementById('app').childNodes)
+      if (test + this.$el.clientHeight < window.innerHeight) {
+        this.$el.classList.add('footer-sticky')
+      } else {
+        this.$el.classList.remove('footer-sticky')
+      }
+    })
+  },
+  watch: {
+    '$route': function () {
+      const test = Array.from(document.getElementById('app').childNodes).filter(x => !x.classList.contains('obj-footer')).map(x => x.clientHeight).reduce((acc, cur) => acc + cur)
+      console.log(test + this.$el.clientHeight, window.innerHeight, document.getElementById('app').childNodes)
+      if (test + this.$el.clientHeight < window.innerHeight) {
+        this.$el.classList.add('footer-sticky')
+      } else {
+        this.$el.classList.remove('footer-sticky')
+      }
+    }
+  }
 }
 
 </script>
