@@ -44,6 +44,11 @@
   position: relative;
   padding: 5rem 0;
   background-color: #e32f12;
+  &.footer-sticky {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
   .obj-footer-container {
     position: relative;
     width: 75%;
@@ -114,6 +119,7 @@
 
 <script>
 export default {
-  
+
 }
+
 </script>

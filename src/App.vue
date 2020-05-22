@@ -118,8 +118,6 @@ objective help
                 display: block;
                 margin: 0 auto;
                 position: relative;
-                code {
-                }
               }
             }
           }
@@ -207,8 +205,6 @@ objective help
       .obj-code {
         pre {
           padding: 1rem 2rem 0.5rem;
-          code {
-          }
         }
       }
       @media (max-width: 768px) {
@@ -220,8 +216,6 @@ objective help
             display: block;
             margin: 0 auto;
             position: relative;
-            code {
-            }
           }
         }
       }
@@ -300,9 +294,7 @@ import 'vue-code-highlight/themes/prism-okaidia.css'
 import 'vue-code-highlight/themes/window.css'
 
 export default {
-  name: 'App',
-  components: {
-  }
+  name: 'App'
 }
 </script>
 
