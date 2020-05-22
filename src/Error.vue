@@ -42,12 +42,32 @@
             flex-flow: row wrap;
             width: 75%;
             margin: 0 auto;
+            @media (max-width: 480px) {
+                width: 100%;
+            }
             .obj-item {
                 display: flex;
                 flex: 1 0 calc(100% / 3);
                 align-items: center;
                 justify-content: center;
                 margin: 0 5rem;
+                @media (max-width: 960px) {
+                    margin: 3rem 0;
+                    flex-basis: 100%;
+                }
+                @media (max-width: 480px) {
+                    overflow: auto;
+                    .obj-code {
+                        max-width: 80%;
+                        margin: 0 auto;
+                        pre {
+                            padding: 1rem 0;
+                            display: block;
+                            margin: 0 auto;
+                            position: relative;
+                        }
+                    }
+                }
                 &.obj-code {
                     pre {
                         padding: 2.5rem 5rem 1rem 2.5rem;
@@ -63,11 +83,17 @@
                         font-weight: 800;
                         opacity: 0.75;
                         color: #444444;
+                        @media (max-width: 480px) {
+                            font-size: 1.5rem;
+                        }
                     }
                     .obj-error-code {
                         font-weight: 200;
                         font-size: 10rem;
                         color: #222222;
+                        @media (max-width: 480px) {
+                            font-size: 5rem;
+                        }
                     }
                 }
             }
