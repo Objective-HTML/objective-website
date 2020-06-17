@@ -45,12 +45,12 @@
                 <pre class="language-bash"><code>
 # To install it, you'll need 
 # Node.js version > 14 and NPM version > 6
-npm i -g objective-cli
+$ npm i -g objective-cli
 
 # Then, you can type the 
 # following command to get help.
 
-objective help
+$ objective help
 
                 </code></pre>
               </div>
