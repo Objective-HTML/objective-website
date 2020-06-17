@@ -158,6 +158,11 @@ $ objective help
                 position: relative;
                 color: #e32f12;
                 border-color: #e32f12;
+                &:hover {
+                  background-color: #e32f12;
+                  border-color: #e32f12;
+                  color: white;
+                }
                 @media (max-width: 960px) {
                   margin: 0 auto;
                 }
