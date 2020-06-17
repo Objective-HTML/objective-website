@@ -6,7 +6,7 @@
   height: 100%;
   width: 100%;
   background-color: #e32f12;
-  z-index: 100;
+  z-index: 100000000000000000;
   opacity: 1;
   transition: all 0.5s ease;
   &.obj-loader-finished {
