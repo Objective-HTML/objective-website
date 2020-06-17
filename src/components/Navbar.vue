@@ -7,7 +7,7 @@
     &.obj-navbar-scrolled {
         position: fixed;
         width: 100%;
-        border-bottom: solid #e32f12 3px;
+        box-shadow: 0 10px 20px rgba(150, 150, 150, 0.1);
         .obj-navbar-start {
             display: none;
         }
