@@ -264,11 +264,19 @@ objective help
               border-color: #e32f12;
               color: #e32f12;
               margin: 0 1rem 0 0;
+              &:hover {
+                background-color: #e32f12;
+                color: white;
+              }
             }
             &:nth-child(2) {
               border-color: #e32f12;
               color: white;
               background: #e32f12;
+              &:hover {
+                background-color: #c72910;
+                border: solid #c72910 2px;
+              }
             }
             @media (max-width: 1200px) {
               display: flex;
