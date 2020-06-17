@@ -156,13 +156,8 @@ $ objective help
                 text-decoration: none;
                 text-transform: uppercase;
                 position: relative;
-                top: 0;
-                transition: top 0.1s ease;
                 color: #e32f12;
                 border-color: #e32f12;
-                &:hover {
-                  top: -2px;
-                }
                 @media (max-width: 960px) {
                   margin: 0 auto;
                 }
@@ -255,11 +250,6 @@ $ objective help
             text-decoration: none;
             text-transform: uppercase;
             position: relative;
-            top: 0;
-            transition: top 0.1s ease;
-            &:hover {
-              top: -2px;
-            }
             &:nth-child(1) {
               border-color: #e32f12;
               color: #e32f12;
