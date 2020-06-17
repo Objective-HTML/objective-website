@@ -3,10 +3,10 @@
     background-color: white;
     top: 0;
     position: relative;
+    z-index: 1000000;
     &.obj-navbar-scrolled {
         position: fixed;
         width: 100%;
-        z-index: 10;
         border-bottom: solid #e32f12 3px;
         .obj-navbar-start {
             display: none;
